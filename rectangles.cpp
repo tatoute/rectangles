@@ -91,7 +91,7 @@ size_t rectangles()
                     cout << corner.first*100 << " " << corner.second*100 << " ";
                 cout << "' stroke='#" << std::setfill('0') << std::setw(6) << std::hex << (seed & 0xffffff) << std::dec << "' fill='#47c54e' fill-opacity='0.2' stroke-width='8'/>" << endl;
                 answer++;
-                seed = seed * 156862837 + 17692417;
+                seed = seed * 156862837U + 17692417U;
             }
         }
     }
